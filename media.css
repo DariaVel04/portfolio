@@ -5,13 +5,14 @@
 
     .container{
         padding: 0px 20px;
-        border: 1px solid red;
     }
 
     .portfolio_photos>img{
         display: block;
         width: calc(33.33% - 30px);
     }
+    
+
 }
 
 @media (max-width:768px){
@@ -33,11 +34,6 @@
         width: calc(50% - 30px);
     }
 
-
-}
-
-
-@media (max-width:768px){
     .header_user_photo{
         display: block;
         width: 100%;
@@ -48,8 +44,28 @@
         align-items: center;
         text-align: center;
     }
-}
 
+    .header_about{
+      flex-direction: column;
+    }
+    .header_about_left{
+        text-align: center;
+    }
+    .header_maininfo_right{
+        margin: 0 auto;
+    }
+    .contact_title{
+        flex-direction: column;
+        gap: 15px;
+        padding: 50px 0px;
+        text-align: center;
+    }
+
+    .contact_title>h2{
+        padding: 0;
+        max-width: 1000px;
+    }
+}
 
 @media (max-width:425px){
     .header_menu_left_list{
@@ -80,7 +96,21 @@
         padding: 0;
         max-width: 100%;
     }
+
+    .header_about_left>p{
+        font-size: 20px;
+    }
+    .contact_title>h2{
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 48px;
+    }
+    .contact_title>a{
+        font-size: 20px;
+    }
+
 }
+
 
 @media (max-width:320px){
     .portfolio_title>h2{
