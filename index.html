@@ -99,18 +99,19 @@
                         <h2>I'm open to internship opportunities, collaborations, or just a friendly chat about coding</h2>
                         <a href="mailto:daria.velychko48@gmail.com">daria.velychko48@gmail.com</a>
                     </div>
-                    <div class="contact_input_wrapper">
-                        <input type="text" placeholder="What’s your name?">
-                        <input type="email" placeholder="Your email">
-                        <input type="text" placeholder="Tell me about your project">
+                    
+                        <form action="" class="contact_input_wrapper">
+                        <input required class="contact_input_name" type="text" placeholder="What’s your name?">
+                        <input required class="contact_input_email" type="email" placeholder="Your email">
+                        <input required class="contact_input_desc" type="text" placeholder="Tell me about your project">
                         <div class="contact_send_section">
                             <button>Get a Quote</button>
-                            <div class="contact_send_right">
-                                <button class="attach_button"><img src="./images/teenyicons_attach-solid.png" alt=""></button>
-                                <button class="arrow_button"><img src="./images/bi_arrow-right-short.png" alt=""></button>
-                            </div>
+
                         </div>
-                    </div>
+                        <div class="success_message">
+                            <p>Thank you for your message! I'll answer you soon</p>
+                        </div>
+                        </form>
             </div>
             </div>
         </section>
@@ -127,14 +128,17 @@
     </footer>
     <div class="modal">
         <div class="inner_modal">
-            <form action="#">
+            <form action="#" class="letstalk_form">
                 <label for="email">
-                    Email<input class="email_input" name="email" type="email" placeholder="Write your email">
+                    Email<input required class="email_input" name="email" type="email" placeholder="Write your email">
                 </label>
                 <label for="desc">
-                    Description <input class="desc_input" name="desc" type="text" placeholder="Write description" maxlength="300">
+                    Description <input required class="desc_input" name="desc" type="text" placeholder="Write description" maxlength="300">
                 </label>
                 <button type="submit">Send</button>
+                <div class="letstalk_success">
+                    <p>Thank you for your message! I'll answer you soon</p>
+                </div>
             </form>
         </div>
     </div>

@@ -352,6 +352,7 @@ color: #8643DC;
     display: flex;
     flex-direction: column;
     gap: 45px;
+    position: relative;
 }
 
 .contact_input_wrapper>input{
@@ -975,6 +976,7 @@ overflow: visible;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .inner_modal>form>label{
@@ -1019,4 +1021,59 @@ overflow: visible;
 .inner_modal>form>button:hover{
   background-color: #520faa;
   color: #FFFFFF;
+}
+
+
+.success_message{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80%;
+  height: 0;
+  transform: translateX(-50%);
+  background-color: rgb(9, 199, 9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.success_active{
+  height: 50%;
+  overflow: visible;
+}
+
+.success_message>p{
+  color: #FFFFFF;
+  font-size: 24px;
+}
+
+.letstalk_success{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80%;
+  height: 0;
+  transform: translateX(-50%);
+  background-color: #fefefe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 30px;
+  transition: height 0.5s ease-in-out;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+
+.letstalk_success_act{
+  height: 80%;
+  overflow: visible;
+}
+
+.letstalk_success>p{
+  font-size: 25px;
 }
